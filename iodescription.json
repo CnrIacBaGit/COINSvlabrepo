@@ -1,0 +1,77 @@
+{
+  "inputs": [
+    {
+      "id": "initial_density",
+      "name": "Initial density",
+      "description": "URL to download the initial density Tiff file",
+      "obligation": true,
+      "hasDefault": false,	      
+      "inputType": "individual",
+      "valueType": "value",
+      "valueSchema": "url",
+      "target": "data/initial_density.tiff"
+ },
+    {
+      "id": "boundaryPA",
+      "name": "Boundary of the Protected Area",
+      "description": "URL to download the boundary shape file",
+      "obligation": true,
+      "hasDefault": false,	      
+      "inputType": "array",
+      "valueType": "value",
+      "valueSchema": "url",
+      "target": "data/boundaryPA.shp"
+ },
+    {
+      "id": "land_cover",
+      "name": "Land cover",
+      "description": "URL to download the land cover shape file",
+      "obligation": true,
+      "hasDefault": false,	      
+      "inputType": "array",
+      "valueType": "value",
+      "valueSchema": "url",
+      "target": "data/land_cover.shp"
+ },
+    {
+      "id": "parameters",
+      "name": "Parameters",
+      "description": "URL to download the parameters csv file",
+      "obligation": true,
+      "hasDefault": false,	      
+      "inputType": "individual",
+      "valueType": "value",
+      "valueSchema": "url",
+      "target": "data/parameters.csv"
+ }
+  ],
+  "outputs": [
+    {
+      "id": "habitat_suitability",
+      "name": "Habitat suitability",
+      "description": "Habitat suitability Tiff file",
+      "outputType": "individual",
+      "valueType": "value",
+      "valueSchema": "url",
+      "target": "data/habitat_suitability.tiff"
+ },
+{
+      "id": "density_rts",
+      "name": "Density time series",
+      "description": "Projection of the population density",
+      "outputType": "individual",
+      "valueType": "value",
+      "valueSchema": "url",
+      "target": "data/density_rts"
+ },
+{
+      "id": "effort_rts",
+      "name": "Effort time series",
+      "description": "Effort allocation strategy",
+      "outputType": "individual",
+      "valueType": "value",
+      "valueSchema": "url",
+      "target": "data/effort_rts"
+ }
+  ]
+}

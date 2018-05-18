@@ -1,0 +1,19 @@
+{
+  "scripts": [
+    {
+      "repoPath": "run.sh",
+      "targetPath": "run.sh",
+      "pathType": "FILE"
+ },
+    {
+      "repoPath": "COINS.r",
+      "targetPath": "COINS.r",
+      "pathType": "FILE"
+ },
+    {
+      "repoPath": "HabSuit.r",
+      "targetPath": "HabSuit.r",
+      "pathType": "FILE"
+ }
+  ]
+}
