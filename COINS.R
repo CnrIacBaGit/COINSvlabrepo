@@ -31,6 +31,7 @@ uds_path    <- "data/UDS2011_ALTAMURGIA_VHR.shp"
 # Read inputs files
 param    <- read.csv(param_path,sep=';',header=FALSE)
 pres     <- raster(presen_path)
+print('Tiff file read')
 suppressWarnings( domain   <- readShapeSpatial(domain_path,proj4string=CRS("+proj=longlat")) )
 
 # Parameters of the model
