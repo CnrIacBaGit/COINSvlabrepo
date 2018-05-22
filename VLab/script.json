@@ -6,13 +6,13 @@
       "pathType": "FILE"
  },
     {
-      "repoPath": "COINS.r",
-      "targetPath": "COINS.r",
+      "repoPath": "COINS.R",
+      "targetPath": "COINS.R",
       "pathType": "FILE"
  },
     {
-      "repoPath": "HabSuit.r",
-      "targetPath": "HabSuit.r",
+      "repoPath": "HabSuit.R",
+      "targetPath": "HabSuit.R",
       "pathType": "FILE"
  }
   ]
