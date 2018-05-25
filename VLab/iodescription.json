@@ -20,7 +20,7 @@
       "inputType": "array",
       "valueType": "value",
       "valueSchema": "url",
-      "target": "data"
+      "target": "data/"
  },
     {
       "id": "land_cover",
@@ -31,7 +31,7 @@
       "inputType": "array",
       "valueType": "value",
       "valueSchema": "url",
-      "target": "data"
+      "target": "data/"
  },
     {
       "id": "parameters",
