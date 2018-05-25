@@ -53,4 +53,4 @@ rho_mat[is.na(rho_mat)]<- 1
 rho <- uds_rast
 rho[] <- rho_mat
 
-writeRaster(rho,"data/suitability100",format="GTiff", overwrite=TRUE)
+writeRaster(rho,"data/habitat_suitability",format="GTiff", overwrite=TRUE)
