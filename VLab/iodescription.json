@@ -20,7 +20,7 @@
       "inputType": "array",
       "valueType": "value",
       "valueSchema": "url",
-      "target": "data/boundaryPA.shp"
+      "target": "data"
  },
     {
       "id": "land_cover",
@@ -31,7 +31,7 @@
       "inputType": "array",
       "valueType": "value",
       "valueSchema": "url",
-      "target": "data/land_cover.shp"
+      "target": "data"
  },
     {
       "id": "parameters",

@@ -22,10 +22,10 @@ library(ggplot2)
 library(plyr)
 
 # Settings
-presen_path <- "data/AILANTHUS_PRESENCE.tif"
-domain_path <- "data/limiteparco_WGS_Project"
+presen_path <- "data/initial_density.tif"
+domain_path <- "data/boundaryPA.shp"
 param_path  <- "data/parameters.csv"
-uds_path    <- "data/UDS2011_ALTAMURGIA_VHR.shp"
+uds_path    <- "data/land_cover.shp"
 
 
 # Read inputs files
