@@ -62,7 +62,7 @@
       "outputType": "individual",
       "valueType": "value",
       "valueSchema": "url",
-      "target": "data/density_rts"
+      "target": "data/density_rts/"
  },
 {
       "id": "effort_rts",
@@ -71,7 +71,7 @@
       "outputType": "individual",
       "valueType": "value",
       "valueSchema": "url",
-      "target": "data/effort_rts"
+      "target": "data/effort_rts/"
  }
   ]
 }
