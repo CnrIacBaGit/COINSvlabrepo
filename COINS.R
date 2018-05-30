@@ -1,4 +1,4 @@
-# COINS.R COntrol of INvasive Species
+# COINS.R (COntrol of INvasive Species)
 # Authors: A. Martiradonna, F. Diele, C. Marangi,  2018
 # email: a.martiradonna@ba.iac.cnr.it
 # In case of use of the model, the Authors should be cited.
@@ -27,11 +27,9 @@ domain_path <- "data/boundaryPA.shp"
 param_path  <- "data/parameters.csv"
 uds_path    <- "data/land_cover.shp"
 
-
 # Read inputs files
 param    <- read.csv(param_path,sep=';',header=FALSE)
 pres     <- raster(presen_path)
-print('Tiff file read')
 suppressWarnings( domain   <- readShapeSpatial(domain_path,proj4string=CRS("+proj=longlat")) )
 
 # Parameters of the model
@@ -46,6 +44,9 @@ omega  <- as.numeric(par_values[7])
 delta  <- as.numeric(par_values[8])
 B      <- as.numeric(par_values[9])
 T      <- as.numeric(par_values[10])
+
+date0 <- as.Date("2012/7/1")
+
 k <-1; q<- 2;
 m <- 2*q-1; alpha <- c*m/(B^m)
 
@@ -60,7 +61,7 @@ pres_num <- raster::aggregate(pres, fact=dx/xres(pres), fun=max, extend=FALSE)
 # Suitability
 
 if (par_values[11]=="N") {HSI <- 1} else          {
-   print("Creating suitability map")
+   print("Creating habitat suitability map")
    source("HabSuit.R")
    HSI_rast <- rho
    HSI <- getValues(HSI_rast,format="matrix")
@@ -91,8 +92,6 @@ if (control == "Y") {
 }
 
 # Time settings
-
-date0 <- as.Date("2012/7/1")
 
 dt <- 0.05
 int <- 1/dt
@@ -211,6 +210,8 @@ while (STOP==0)   {
 
 }
 
+if (min(tolFB*norm_u-err_u,tolFB*norm_v-err_v) >0)  { print(paste("Tolerance achieved in",it,"iterates")) } else { print(paste("Tolerance not achieved in",itmax,"iterates")) }
+
 ### Output
 
 dates <- seq(date0, by = "year", length.out = T+1)
@@ -225,7 +226,7 @@ for (s in seq((int+1),Nt,by=int)) {
     ab_rast <- stack(ab_rast, dens)
 }
 ab_rts <- rts(ab_rast, dates)
-write.rts(ab_rts,paste("data/AILANTHUS_density_",T,"y",sep=""),overwrite=TRUE)
+write.rts(ab_rts,"data/density",overwrite=TRUE)
 
 e0 <- Eout[,1]
 E0 <- matrix(e0,ncol=Ny)
@@ -241,4 +242,4 @@ for (s in seq((int+1),Nt,by=int)) {
     eff_rast <- stack(eff_rast, eff)
 }
 eff_rts <- rts(eff_rast,dates)
-write.rts(eff_rts,paste("data/AILANTHUS_effort_",T,"y",sep=""),overwrite=TRUE)
+write.rts(eff_rts,"data/effort",overwrite=TRUE)

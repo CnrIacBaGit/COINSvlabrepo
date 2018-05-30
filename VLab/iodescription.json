@@ -17,7 +17,7 @@
       "description": "URL to download the boundary shape file",
       "obligation": true,
       "hasDefault": false,	      
-      "inputType": "array",
+      "inputType": "individual",
       "valueType": "value",
       "valueSchema": "url",
       "target": "data/"
@@ -28,7 +28,7 @@
       "description": "URL to download the land cover shape file",
       "obligation": true,
       "hasDefault": false,	      
-      "inputType": "array",
+      "inputType": "individual",
       "valueType": "value",
       "valueSchema": "url",
       "target": "data/"
@@ -62,7 +62,7 @@
       "outputType": "individual",
       "valueType": "value",
       "valueSchema": "url",
-      "target": "data/density_rts/"
+      "target": "data/density/"
  },
 {
       "id": "effort_rts",
@@ -71,7 +71,7 @@
       "outputType": "individual",
       "valueType": "value",
       "valueSchema": "url",
-      "target": "data/effort_rts/"
+      "target": "data/effort/"
  }
   ]
 }
