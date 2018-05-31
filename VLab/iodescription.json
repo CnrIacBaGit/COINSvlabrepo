@@ -59,7 +59,7 @@
       "id": "density_rts",
       "name": "Density time series",
       "description": "Projection of the population density",
-      "outputType": "individual",
+      "outputType": "array",
       "valueType": "value",
       "valueSchema": "url",
       "target": "data/density/"
@@ -68,7 +68,7 @@
       "id": "effort_rts",
       "name": "Effort time series",
       "description": "Effort allocation strategy",
-      "outputType": "individual",
+      "outputType": "array",
       "valueType": "value",
       "valueSchema": "url",
       "target": "data/effort/"
