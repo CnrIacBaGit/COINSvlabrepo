@@ -20,7 +20,7 @@
       "inputType": "individual",
       "valueType": "value",
       "valueSchema": "url",
-      "target": "data/"
+      "target": "data/boundaryPA.zip"
  },
     {
       "id": "land_cover",
@@ -31,7 +31,7 @@
       "inputType": "individual",
       "valueType": "value",
       "valueSchema": "url",
-      "target": "data/"
+      "target": "data/land_cover.zip"
  },
     {
       "id": "parameters",
