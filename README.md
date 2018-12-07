@@ -50,3 +50,4 @@ e) Ragni S., Department of Economics and Management, University of Ferrara, Ferr
 The description of the model is available in: 
 
 Baker CM, Diele F, Marangi C, Martiradonna A, Ragni S. (2018) Optimal spatiotemporal effort allocation for invasive species removal incorporating a removal handling time and budget. Natural Resource Modeling; 31:e12190 https://doi.org/10.1111/nrm.12190
+
